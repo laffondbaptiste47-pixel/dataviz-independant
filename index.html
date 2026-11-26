@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Defra figures for 2024/25 show how much households in each UK region and income group spend on food each week.">
+  <title>Map of the UK food crisis: the regions paying the highest price for everyday groceries | The Independent</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;0,8..60,800;1,8..60,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/leaflet.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- Bandeau du journal -->
+  <header class="site-header">
+    <div class="topline">
+      <div class="wrap topline__inner">
+        <span>Thursday 19 November 2026</span>
+        <span class="topline__right">UK edition</span>
+      </div>
+    </div>
+
+    <div class="wrap masthead">
+      <a href="#top" class="masthead__logo" aria-label="The Independent">The Independent</a>
+    </div>
+
+    <nav class="sections" aria-label="Sections">
+      <div class="wrap sections__inner">
+        <a href="#top">News</a>
+        <a href="#top" aria-current="page">UK</a>
+        <a href="#top">Cost of living</a>
+        <a href="#interactive-map">The map</a>
+        <a href="#regional-analysis">By region</a>
+        <a href="#methodology">Method</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <article id="top">
+
+      <!-- En-tete de l'article -->
+      <header class="article-head wrap-text">
+        <p class="kicker"><a href="#top">Cost of living</a></p>
+        <h1>Map of the UK food crisis: the regions paying the highest price for everyday groceries</h1>
+        <p class="standfirst">
+          The poorest tenth of households spend £3.74 a week per person on fresh fruit and vegetables. The richest spend £5.97. Where you live widens the gap further.
+        </p>
+        <div class="byline">
+          <p><span class="byline__name">Data desk</span> <span class="byline__sep">·</span> Analysis of Defra Family Food 2024/25</p>
+          <p class="byline__time"><time datetime="2026-11-19">19 November 2026</time> · 6 min read</p>
+        </div>
+      </header>
+
+      <!-- Partie 1 : les revenus -->
+      <section class="body-text wrap-text" id="income-divide" aria-labelledby="heading-income">
+        <p class="lede">
+          The weekly shop has become one of the clearest measures of inequality in Britain. Headline inflation has cooled since its peak, but prices on the shelf have not come back down, and what a family puts in its basket now depends heavily on what it earns.
+        </p>
+
+        <aside class="margin-figure" aria-label="Key figure">
+          <span class="margin-figure__value">1.6×</span>
+          <p>what the richest tenth spend on fresh produce, compared with the poorest tenth</p>
+        </aside>
+
+        <p>
+          Figures from the Department for Environment, Food and Rural Affairs (Defra) for 2024/25, converted from pence to pounds per person per week, show the size of that gap. Households in the lowest income decile spend <strong>£28.98</strong> on food for the home. In the highest decile the figure is <strong>£45.98</strong>, about 59 per cent more.
+        </p>
+
+        <h2 id="heading-income">Two baskets, same proportions</h2>
+
+        <p>
+          Fresh fruit and vegetables follow the same line. The richest tenth spend <strong>£5.97</strong> a week, the poorest <strong>£3.74</strong>. Figure 1 sets the two groups side by side across five categories.
+        </p>
+      </section>
+
+      <!-- FIGURE 1 : dataviz fixe -->
+      <figure class="figure wrap-wide">
+        <img
+          src="assets/dataviz_income_divide.svg"
+          alt="Bar chart of weekly food spending per person in 2024/25, lowest 10% versus highest 10% of households: total food at home £28.98 vs £45.98, eating out £5.53 vs £20.41, convenience foods £9.83 vs £14.42, fresh fruit and vegetables £3.74 vs £5.97, ready meals £2.02 vs £3.14."
+          width="920"
+          height="560"
+        >
+        <figcaption>
+          <strong>Figure 1.</strong> Weekly spending per person, lowest-income tenth (red) and highest-income tenth (black). Both groups put about 13% of their grocery budget into fresh produce (12.9% and 13.0%).
+          <span class="credit">Source: Defra, Family Food 2024/25</span>
+        </figcaption>
+      </figure>
+
+      <section class="body-text wrap-text">
+        <p>
+          What stands out is the share. Poorer households give fresh produce the same slice of their budget as richer ones, 12.9 per cent against 13.0 per cent. They are not choosing differently. They simply have £17 less per person to spend each week, so every rise in the price of fruit, vegetables or fresh meat pushes the basket toward food that keeps longer and costs less per calorie.
+        </p>
+
+        <blockquote class="quote">
+          <p>The widest gap is outside the home. The richest tenth spend £20.41 a head each week eating out, almost four times the £5.53 spent by the poorest.</p>
+        </blockquote>
+      </section>
+
+      <!-- Partie 2 : carte interactive + graphique anime -->
+      <section class="interactive" id="interactive-map" aria-labelledby="heading-map">
+        <div class="wrap">
+          <div class="interactive__intro">
+            <h2 id="heading-map">How much does your region spend?</h2>
+            <p>
+              Choose a category to recolour the map. Click a region to see its full basket next to the UK average, or click a bar in the chart to switch the map to that category.
+            </p>
+          </div>
+
+          <!-- Controles exterieurs (niveau 2) -->
+          <div class="controls" role="region" aria-label="Map controls">
+            <div class="controls__group" role="group" aria-label="Spending category">
+              <button type="button" class="filter-btn active" data-metric="fresh_fv" aria-pressed="true">Fresh fruit &amp; veg</button>
+              <button type="button" class="filter-btn" data-metric="total" aria-pressed="false">All food at home</button>
+              <button type="button" class="filter-btn" data-metric="convenience" aria-pressed="false">Convenience</button>
+              <button type="button" class="filter-btn" data-metric="eating_out" aria-pressed="false">Eating out</button>
+            </div>
+
+            <div class="controls__row">
+              <label class="field">
+                <span class="field__label">Region</span>
+                <select id="region-select" class="control-select">
+                  <option value="">All 12 regions</option>
+                </select>
+              </label>
+
+              <label class="field field--range">
+                <span class="field__label">Show regions spending up to <output class="threshold-value" id="threshold-output">All (£6.00)</output></span>
+                <input type="range" id="threshold-slider" min="3" max="6" step="0.1" value="6">
+              </label>
+
+              <button type="button" class="reset-btn" id="reset-view-btn">Reset map</button>
+            </div>
+          </div>
+
+          <div class="dashboard">
+            <!-- FIGURE 2 : carte Leaflet -->
+            <figure class="dashboard__map">
+              <h3 class="dashboard__title" id="map-panel-title">Figure 2. Weekly spend per person by region: fresh fruit &amp; veg</h3>
+              <div id="uk-map" role="application" aria-label="Map of UK regions coloured by weekly food spending"></div>
+            </figure>
+
+            <!-- FIGURE 3 : graphique Snap.svg -->
+            <figure class="dashboard__chart">
+              <h3 class="dashboard__title">Figure 3. Selected region against the UK average</h3>
+              <div class="region-head">
+                <p class="snap-region-name" id="snap-region-name">London</p>
+                <p class="snap-region-rank" id="snap-region-rank">Rank 1 / 12 for fresh produce</p>
+              </div>
+              <svg id="snap-basket-chart" viewBox="0 0 520 385" width="520" height="385" role="img" aria-label="Bar chart of the selected region's weekly spending in five categories, with the UK average marked"></svg>
+              <p class="snap-region-note" id="snap-region-note">Click a region on the map to update this chart.</p>
+            </figure>
+          </div>
+
+          <p class="interactive__note">
+            Darker red means higher spending per person in the chosen category. The dashed line in Figure 3 marks the average across the 12 regions. Use the layer button in the corner of the map to change the base map or show regional capitals. Source: Defra, Family Food 2024/25.
+          </p>
+        </div>
+      </section>
+
+      <!-- Partie 3 : analyse regionale + tableau -->
+      <section class="body-text wrap-text" id="regional-analysis" aria-labelledby="heading-regional">
+        <h2 id="heading-regional">From London to Wales, a north–south line</h2>
+        <p>
+          The pattern on the map is hard to miss. London (<strong>£5.77</strong>), the South West (<strong>£4.53</strong>), the South East (<strong>£4.41</strong>) and the East of England (<strong>£4.33</strong>) all sit above the regional average of £3.94 for fresh fruit and vegetables.
+        </p>
+        <p>
+          At the other end, households in <strong>Wales</strong> spend <strong>£3.04</strong> and those in the <strong>North East</strong> <strong>£3.18</strong>. Londoners spend 89.8 per cent more on fresh produce than people in Wales, and 81.4 per cent more than people in the North East.
+        </p>
+        <p>
+          Total grocery bills tell a slightly different story. The South West (£42.76) and Northern Ireland (£41.28) have the largest food budgets overall. In Northern Ireland much of that goes on convenience food, £14.70 a week, the highest of any region. Wales (£33.52) and the North East (£33.51) have the smallest budgets in the UK.
+        </p>
+      </section>
+
+      <div class="table-block wrap-wide">
+        <table>
+          <caption>Weekly food spending per person by region, 2024/25, ranked by fresh fruit and veg</caption>
+          <thead>
+            <tr>
+              <th scope="col">Region</th>
+              <th scope="col" class="num">All food</th>
+              <th scope="col" class="num">Fresh F&amp;V</th>
+              <th scope="col" class="num">Convenience</th>
+              <th scope="col" class="num">Eating out</th>
+              <th scope="col" class="num">Rank</th>
+            </tr>
+          </thead>
+          <tbody id="regional-table-body">
+            <!-- rempli par data_loader.js -->
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Partie 4 : methode -->
+      <section class="body-text wrap-text method" id="methodology" aria-labelledby="heading-method">
+        <h2 id="heading-method">How we did this</h2>
+        <p>
+          All figures come from Defra's Family Food survey for the 2024/25 financial year: the table by equivalised income decile and the table by Government Office Region. Defra publishes spending in pence per person per week; we converted it to pounds and rounded to two decimals.
+        </p>
+        <p>
+          “Fresh fruit and veg” adds Defra's fresh fruit series to its fresh green and other fresh vegetables, potatoes excluded. These are survey estimates, so small differences between regions may fall within the margin of error.
+        </p>
+      </section>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap site-footer__inner">
+      <p class="site-footer__logo">The Independent</p>
+      <p>Data: <a href="https://www.gov.uk/government/statistical-data-sets/family-food-datasets" target="_blank" rel="noopener noreferrer">Defra, Family Food datasets</a></p>
+      <p class="site-footer__small">Student project, SAÉ 303-2, BUT MMI. Not affiliated with The Independent.</p>
+    </div>
+  </footer>
+
+  <!-- Librairies locales et scripts -->
+  <script src="js/leaflet.js"></script>
+  <script src="js/snap.svg-min.js"></script>
+  <script src="data/uk_regions_fallback.js"></script>
+  <!-- 1. Configuration et etat global -->
+  <script src="js/config.js"></script>
+  <!-- 2. Interactions notees (niveaux 1 a 4) -->
+  <script src="js/interactions_notees.js"></script>
+  <!-- 3. Chargement des donnees et demarrage -->
+  <script src="js/data_loader.js"></script>
+</body>
+</html>
