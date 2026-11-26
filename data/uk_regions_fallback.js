@@ -1,0 +1,1108 @@
+window.UK_REGIONS_FALLBACK = {
+  "type": "FeatureCollection",
+  "metadata": {
+    "source": "UK Department for Environment, Food and Rural Affairs (Defra) — Family Food 2024/25",
+    "unit": "GBP (£) per person per week",
+    "uk_regional_averages": {
+      "total": 37.09,
+      "fresh_fv": 3.94,
+      "convenience": 12.55,
+      "ready_meals": 2.46,
+      "eating_out": 12.31
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "E12000001",
+      "properties": {
+        "name": "North East",
+        "label": "North East",
+        "ons_code": "E12000001",
+        "capital": "Newcastle",
+        "capital_coords": [
+          54.9783,
+          -1.6178
+        ],
+        "total": 33.51,
+        "fresh_fruit": 1.66,
+        "fresh_veg": 1.52,
+        "fresh_fv": 3.18,
+        "fresh_share_pct": 9.5,
+        "ready_meals": 2.45,
+        "convenience": 11.6,
+        "soft_drinks_confectionery": 3.1,
+        "eating_out": 12.04,
+        "rank_fv": 11,
+        "vs_uk_avg_fv_pct": -19.2,
+        "note": "Lowest total weekly household food budget in the UK (£33.51) and second-lowest fresh produce spend (£3.18)."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -2.1,
+              55.82
+            ],
+            [
+              -1.58,
+              55.35
+            ],
+            [
+              -1.35,
+              54.92
+            ],
+            [
+              -0.95,
+              54.58
+            ],
+            [
+              -1.35,
+              54.48
+            ],
+            [
+              -1.95,
+              54.48
+            ],
+            [
+              -2.42,
+              54.62
+            ],
+            [
+              -2.55,
+              54.95
+            ],
+            [
+              -2.68,
+              55.22
+            ],
+            [
+              -2.35,
+              55.55
+            ],
+            [
+              -2.1,
+              55.82
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "E12000002",
+      "properties": {
+        "name": "North West",
+        "label": "North West",
+        "ons_code": "E12000002",
+        "capital": "Manchester",
+        "capital_coords": [
+          53.4808,
+          -2.2426
+        ],
+        "total": 36.21,
+        "fresh_fruit": 1.91,
+        "fresh_veg": 1.85,
+        "fresh_fv": 3.76,
+        "fresh_share_pct": 10.4,
+        "ready_meals": 2.43,
+        "convenience": 12.3,
+        "soft_drinks_confectionery": 2.96,
+        "eating_out": 12.67,
+        "rank_fv": 7,
+        "vs_uk_avg_fv_pct": -4.5,
+        "note": "Mid-table household spend (£36.21) with fresh fruit & veg (£3.76) trailing the southern regions."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -3.25,
+              54.98
+            ],
+            [
+              -2.95,
+              55.2
+            ],
+            [
+              -2.68,
+              55.22
+            ],
+            [
+              -2.55,
+              54.95
+            ],
+            [
+              -2.42,
+              54.62
+            ],
+            [
+              -2.35,
+              54.25
+            ],
+            [
+              -2.05,
+              53.85
+            ],
+            [
+              -1.92,
+              53.5
+            ],
+            [
+              -2.05,
+              53.18
+            ],
+            [
+              -2.55,
+              53.02
+            ],
+            [
+              -2.95,
+              53.15
+            ],
+            [
+              -3.15,
+              53.38
+            ],
+            [
+              -3.05,
+              53.65
+            ],
+            [
+              -3.05,
+              54.05
+            ],
+            [
+              -3.55,
+              54.45
+            ],
+            [
+              -3.48,
+              54.82
+            ],
+            [
+              -3.25,
+              54.98
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "E12000003",
+      "properties": {
+        "name": "Yorkshire and The Humber",
+        "label": "Yorkshire and The Humber",
+        "ons_code": "E12000003",
+        "capital": "Leeds",
+        "capital_coords": [
+          53.8008,
+          -1.5491
+        ],
+        "total": 36.61,
+        "fresh_fruit": 1.99,
+        "fresh_veg": 1.65,
+        "fresh_fv": 3.64,
+        "fresh_share_pct": 9.9,
+        "ready_meals": 2.23,
+        "convenience": 11.64,
+        "soft_drinks_confectionery": 2.54,
+        "eating_out": 13.35,
+        "rank_fv": 8,
+        "vs_uk_avg_fv_pct": -7.6,
+        "note": "Moderate weekly grocery budget (£36.61), but fresh produce spend (£3.64) remains 37% below London."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -2.42,
+              54.62
+            ],
+            [
+              -1.95,
+              54.48
+            ],
+            [
+              -1.35,
+              54.48
+            ],
+            [
+              -0.95,
+              54.58
+            ],
+            [
+              -0.35,
+              54.28
+            ],
+            [
+              0.12,
+              53.65
+            ],
+            [
+              -0.08,
+              53.52
+            ],
+            [
+              -0.65,
+              53.48
+            ],
+            [
+              -1.12,
+              53.38
+            ],
+            [
+              -1.62,
+              53.35
+            ],
+            [
+              -1.92,
+              53.5
+            ],
+            [
+              -2.05,
+              53.85
+            ],
+            [
+              -2.35,
+              54.25
+            ],
+            [
+              -2.42,
+              54.62
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "E12000004",
+      "properties": {
+        "name": "East Midlands",
+        "label": "East Midlands",
+        "ons_code": "E12000004",
+        "capital": "Nottingham",
+        "capital_coords": [
+          52.9548,
+          -1.1581
+        ],
+        "total": 34.42,
+        "fresh_fruit": 1.94,
+        "fresh_veg": 2.03,
+        "fresh_fv": 3.97,
+        "fresh_share_pct": 11.5,
+        "ready_meals": 2.13,
+        "convenience": 11.53,
+        "soft_drinks_confectionery": 2.87,
+        "eating_out": 10.22,
+        "rank_fv": 5,
+        "vs_uk_avg_fv_pct": 0.8,
+        "note": "Near-average fresh produce (£3.97) despite a tighter overall grocery budget (£34.42)."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -1.92,
+              53.5
+            ],
+            [
+              -1.62,
+              53.35
+            ],
+            [
+              -1.12,
+              53.38
+            ],
+            [
+              -0.65,
+              53.48
+            ],
+            [
+              -0.08,
+              53.52
+            ],
+            [
+              0.32,
+              53.15
+            ],
+            [
+              0.15,
+              52.82
+            ],
+            [
+              -0.35,
+              52.55
+            ],
+            [
+              -0.65,
+              52.2
+            ],
+            [
+              -1.15,
+              52.05
+            ],
+            [
+              -1.35,
+              52.25
+            ],
+            [
+              -1.55,
+              52.52
+            ],
+            [
+              -1.72,
+              52.85
+            ],
+            [
+              -2.05,
+              53.18
+            ],
+            [
+              -1.92,
+              53.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "E12000005",
+      "properties": {
+        "name": "West Midlands",
+        "label": "West Midlands",
+        "ons_code": "E12000005",
+        "capital": "Birmingham",
+        "capital_coords": [
+          52.4862,
+          -1.8904
+        ],
+        "total": 33.62,
+        "fresh_fruit": 1.76,
+        "fresh_veg": 1.68,
+        "fresh_fv": 3.44,
+        "fresh_share_pct": 10.2,
+        "ready_meals": 2.01,
+        "convenience": 11.02,
+        "soft_drinks_confectionery": 2.92,
+        "eating_out": 10.17,
+        "rank_fv": 9,
+        "vs_uk_avg_fv_pct": -12.6,
+        "note": "Third-lowest household food budget (£33.62) and lowest convenience food spending in the UK (£11.02)."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -2.95,
+              53.15
+            ],
+            [
+              -2.55,
+              53.02
+            ],
+            [
+              -2.05,
+              53.18
+            ],
+            [
+              -1.72,
+              52.85
+            ],
+            [
+              -1.55,
+              52.52
+            ],
+            [
+              -1.35,
+              52.25
+            ],
+            [
+              -1.62,
+              52.0
+            ],
+            [
+              -2.25,
+              51.95
+            ],
+            [
+              -2.68,
+              51.88
+            ],
+            [
+              -2.98,
+              52.28
+            ],
+            [
+              -3.05,
+              52.75
+            ],
+            [
+              -2.95,
+              53.15
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "E12000006",
+      "properties": {
+        "name": "East of England",
+        "label": "Eastern",
+        "ons_code": "E12000006",
+        "capital": "Cambridge",
+        "capital_coords": [
+          52.2053,
+          0.1218
+        ],
+        "total": 38.76,
+        "fresh_fruit": 2.26,
+        "fresh_veg": 2.07,
+        "fresh_fv": 4.33,
+        "fresh_share_pct": 11.2,
+        "ready_meals": 2.6,
+        "convenience": 13.33,
+        "soft_drinks_confectionery": 2.96,
+        "eating_out": 14.28,
+        "rank_fv": 4,
+        "vs_uk_avg_fv_pct": 10.0,
+        "note": "Strong weekly spending across both groceries (£38.76) and eating out (£14.28), ranking 4th for fresh produce (£4.33)."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.15,
+              52.82
+            ],
+            [
+              0.95,
+              52.95
+            ],
+            [
+              1.72,
+              52.68
+            ],
+            [
+              1.75,
+              52.32
+            ],
+            [
+              1.42,
+              51.95
+            ],
+            [
+              0.92,
+              51.65
+            ],
+            [
+              0.35,
+              51.5
+            ],
+            [
+              0.22,
+              51.65
+            ],
+            [
+              -0.12,
+              51.7
+            ],
+            [
+              -0.45,
+              51.65
+            ],
+            [
+              -0.68,
+              51.85
+            ],
+            [
+              -0.65,
+              52.2
+            ],
+            [
+              -0.35,
+              52.55
+            ],
+            [
+              0.15,
+              52.82
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "E12000007",
+      "properties": {
+        "name": "London",
+        "label": "London",
+        "ons_code": "E12000007",
+        "capital": "London",
+        "capital_coords": [
+          51.5072,
+          -0.1276
+        ],
+        "total": 36.98,
+        "fresh_fruit": 3.09,
+        "fresh_veg": 2.68,
+        "fresh_fv": 5.77,
+        "fresh_share_pct": 15.6,
+        "ready_meals": 2.33,
+        "convenience": 12.25,
+        "soft_drinks_confectionery": 2.25,
+        "eating_out": 13.47,
+        "rank_fv": 1,
+        "vs_uk_avg_fv_pct": 46.5,
+        "note": "UK's highest fresh fruit & vegetable spend (£5.77/wk — 15.6% of its household food budget, +89.8% above Wales)."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.48,
+              51.62
+            ],
+            [
+              -0.12,
+              51.7
+            ],
+            [
+              0.22,
+              51.65
+            ],
+            [
+              0.3,
+              51.48
+            ],
+            [
+              0.12,
+              51.32
+            ],
+            [
+              -0.22,
+              51.3
+            ],
+            [
+              -0.48,
+              51.42
+            ],
+            [
+              -0.48,
+              51.62
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "E12000008",
+      "properties": {
+        "name": "South East",
+        "label": "South East",
+        "ons_code": "E12000008",
+        "capital": "Brighton / Reading",
+        "capital_coords": [
+          51.25,
+          -0.75
+        ],
+        "total": 39.23,
+        "fresh_fruit": 2.17,
+        "fresh_veg": 2.24,
+        "fresh_fv": 4.41,
+        "fresh_share_pct": 11.2,
+        "ready_meals": 2.87,
+        "convenience": 12.64,
+        "soft_drinks_confectionery": 2.57,
+        "eating_out": 13.18,
+        "rank_fv": 3,
+        "vs_uk_avg_fv_pct": 12.0,
+        "note": "High total grocery spend (£39.23) and 3rd highest fresh produce budget (£4.41)."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -1.62,
+              52.0
+            ],
+            [
+              -1.15,
+              52.05
+            ],
+            [
+              -0.65,
+              52.2
+            ],
+            [
+              -0.68,
+              51.85
+            ],
+            [
+              -0.45,
+              51.65
+            ],
+            [
+              -0.48,
+              51.62
+            ],
+            [
+              -0.48,
+              51.42
+            ],
+            [
+              -0.22,
+              51.3
+            ],
+            [
+              0.12,
+              51.32
+            ],
+            [
+              0.3,
+              51.48
+            ],
+            [
+              0.35,
+              51.5
+            ],
+            [
+              1.42,
+              51.35
+            ],
+            [
+              1.38,
+              51.12
+            ],
+            [
+              0.75,
+              50.85
+            ],
+            [
+              -0.15,
+              50.78
+            ],
+            [
+              -1.05,
+              50.78
+            ],
+            [
+              -1.72,
+              50.75
+            ],
+            [
+              -1.72,
+              51.35
+            ],
+            [
+              -1.62,
+              52.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "E12000009",
+      "properties": {
+        "name": "South West",
+        "label": "South West",
+        "ons_code": "E12000009",
+        "capital": "Bristol",
+        "capital_coords": [
+          51.4545,
+          -2.5879
+        ],
+        "total": 42.76,
+        "fresh_fruit": 2.22,
+        "fresh_veg": 2.31,
+        "fresh_fv": 4.53,
+        "fresh_share_pct": 10.6,
+        "ready_meals": 3.1,
+        "convenience": 14.3,
+        "soft_drinks_confectionery": 3.59,
+        "eating_out": 17.28,
+        "rank_fv": 2,
+        "vs_uk_avg_fv_pct": 15.0,
+        "note": "Highest overall household food spend (£42.76) and eating-out spend (£17.28) in the UK; 2nd for fresh produce (£4.53)."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -2.68,
+              51.88
+            ],
+            [
+              -2.25,
+              51.95
+            ],
+            [
+              -1.62,
+              52.0
+            ],
+            [
+              -1.72,
+              51.35
+            ],
+            [
+              -1.72,
+              50.75
+            ],
+            [
+              -2.45,
+              50.62
+            ],
+            [
+              -3.52,
+              50.35
+            ],
+            [
+              -4.25,
+              50.25
+            ],
+            [
+              -5.25,
+              50.02
+            ],
+            [
+              -5.68,
+              50.1
+            ],
+            [
+              -4.85,
+              50.65
+            ],
+            [
+              -4.22,
+              51.15
+            ],
+            [
+              -3.25,
+              51.25
+            ],
+            [
+              -2.68,
+              51.65
+            ],
+            [
+              -2.68,
+              51.88
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "W92000004",
+      "properties": {
+        "name": "Wales",
+        "label": "Wales",
+        "ons_code": "W92000004",
+        "capital": "Cardiff",
+        "capital_coords": [
+          51.4816,
+          -3.1791
+        ],
+        "total": 33.52,
+        "fresh_fruit": 1.71,
+        "fresh_veg": 1.33,
+        "fresh_fv": 3.04,
+        "fresh_share_pct": 9.1,
+        "ready_meals": 1.8,
+        "convenience": 11.57,
+        "soft_drinks_confectionery": 3.4,
+        "eating_out": 8.58,
+        "rank_fv": 12,
+        "vs_uk_avg_fv_pct": -22.8,
+        "note": "Lowest fresh fruit & veg spend (£3.04), lowest ready meals (£1.80) and lowest eating-out spend (£8.58) in the UK."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -3.15,
+              53.38
+            ],
+            [
+              -2.95,
+              53.15
+            ],
+            [
+              -3.05,
+              52.75
+            ],
+            [
+              -2.98,
+              52.28
+            ],
+            [
+              -2.68,
+              51.65
+            ],
+            [
+              -3.22,
+              51.4
+            ],
+            [
+              -3.95,
+              51.55
+            ],
+            [
+              -4.95,
+              51.62
+            ],
+            [
+              -5.28,
+              51.88
+            ],
+            [
+              -4.65,
+              52.15
+            ],
+            [
+              -4.1,
+              52.45
+            ],
+            [
+              -4.15,
+              52.85
+            ],
+            [
+              -4.65,
+              53.25
+            ],
+            [
+              -3.85,
+              53.35
+            ],
+            [
+              -3.15,
+              53.38
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "S92000003",
+      "properties": {
+        "name": "Scotland",
+        "label": "Scotland",
+        "ons_code": "S92000003",
+        "capital": "Edinburgh",
+        "capital_coords": [
+          55.9533,
+          -3.1883
+        ],
+        "total": 38.2,
+        "fresh_fruit": 1.97,
+        "fresh_veg": 1.94,
+        "fresh_fv": 3.91,
+        "fresh_share_pct": 10.2,
+        "ready_meals": 2.7,
+        "convenience": 13.68,
+        "soft_drinks_confectionery": 3.09,
+        "eating_out": 10.13,
+        "rank_fv": 6,
+        "vs_uk_avg_fv_pct": -0.7,
+        "note": "Above-average household grocery spend (£38.20), with fresh produce close to the UK mean."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -5.05,
+              54.65
+            ],
+            [
+              -5.55,
+              55.3
+            ],
+            [
+              -5.75,
+              56.1
+            ],
+            [
+              -6.25,
+              56.75
+            ],
+            [
+              -5.85,
+              57.55
+            ],
+            [
+              -5.25,
+              58.45
+            ],
+            [
+              -4.15,
+              58.62
+            ],
+            [
+              -3.05,
+              58.65
+            ],
+            [
+              -3.1,
+              58.15
+            ],
+            [
+              -3.85,
+              57.65
+            ],
+            [
+              -2.1,
+              57.68
+            ],
+            [
+              -1.78,
+              57.5
+            ],
+            [
+              -2.08,
+              57.15
+            ],
+            [
+              -2.45,
+              56.7
+            ],
+            [
+              -2.65,
+              56.25
+            ],
+            [
+              -3.15,
+              56.0
+            ],
+            [
+              -2.1,
+              55.82
+            ],
+            [
+              -2.35,
+              55.55
+            ],
+            [
+              -2.95,
+              55.2
+            ],
+            [
+              -3.25,
+              54.98
+            ],
+            [
+              -4.2,
+              54.78
+            ],
+            [
+              -5.05,
+              54.65
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "N92000002",
+      "properties": {
+        "name": "Northern Ireland",
+        "label": "Northern Ireland",
+        "ons_code": "N92000002",
+        "capital": "Belfast",
+        "capital_coords": [
+          54.5973,
+          -5.9301
+        ],
+        "total": 41.28,
+        "fresh_fruit": 1.89,
+        "fresh_veg": 1.38,
+        "fresh_fv": 3.27,
+        "fresh_share_pct": 7.9,
+        "ready_meals": 2.83,
+        "convenience": 14.7,
+        "soft_drinks_confectionery": 3.79,
+        "eating_out": 12.34,
+        "rank_fv": 10,
+        "vs_uk_avg_fv_pct": -17.0,
+        "note": "Second-highest total household food spend (£41.28), heavily weighted toward convenience foods (£14.70, UK highest)."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -8.15,
+              54.45
+            ],
+            [
+              -7.9,
+              54.78
+            ],
+            [
+              -7.35,
+              55.02
+            ],
+            [
+              -6.65,
+              55.22
+            ],
+            [
+              -6.05,
+              55.2
+            ],
+            [
+              -5.55,
+              54.65
+            ],
+            [
+              -5.45,
+              54.35
+            ],
+            [
+              -5.95,
+              54.05
+            ],
+            [
+              -6.65,
+              54.08
+            ],
+            [
+              -7.25,
+              54.15
+            ],
+            [
+              -7.85,
+              54.25
+            ],
+            [
+              -8.15,
+              54.45
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+};
